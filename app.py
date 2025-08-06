@@ -31,3 +31,5 @@ if st.button("Predict Emotion"):
     prediction = model.predict([user_input])[0]
     emoji = emoji_map.get(prediction, '')  # Get emoji or empty if not found
     st.success(f"Predicted Emotion: {prediction} {emoji}")
+
+
